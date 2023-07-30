@@ -229,7 +229,7 @@ from product_sales ps join product_details pd
 on ps.prod_id=pd.product_id
 group by category_name ;
 
---What is the total transaction “penetration” for each product? (hint: penetration = number of transactions where at least 1 quantity of a product was purchased divided by total number of transactions)
+--What is the total transaction Â“penetrationÂ” for each product? (hint: penetration = number of transactions where at least 1 quantity of a product was purchased divided by total number of transactions)
 with cte1 as (
 select pd.product_name,COUNT(1) as penetration
 from product_sales ps join product_details pd
